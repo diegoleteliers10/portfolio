@@ -17,7 +17,7 @@ const Home = () => {
             </Fade>
           </div>
           <Slide delay={300} duration={1000} fraction={0} triggerOnce>
-            <p className='text-[#EEEEEE] py-4 max-w-md'>I am a Chilean Full Stack Developer looking for challenges and new experiences. I am also an agluien who loves to work in a team and learn and create things with new technologies. <FaHandPointDown size={20} className='animate-bounce infinite inline-block ml-[13rem] relative top-2'/></p>
+            <p className='text-[#EEEEEE] py-4 max-w-md'>I am a Chilean Full Stack Developer looking for challenges and new experiences. I am also someone who loves to work in a team and learn and create things with new technologies. <FaHandPointDown size={20} className='animate-bounce infinite inline-block ml-[13rem] relative top-2'/></p>
           </Slide>
 
           <div className='flex flex-row items-center justify-center py-2'>
