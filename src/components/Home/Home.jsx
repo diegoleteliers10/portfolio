@@ -5,9 +5,9 @@ import {Fade,Slide, Bounce, Rotate} from 'react-awesome-reveal'
 
 const Home = () => {
   return (
-    <div name='home' className='h-screen w-full bg-[#222831]'>
-      <div className='max-w-screen-lg mx-auto flex flex-row items-center justify-center h-full pl-2'>
-        <div className='flex flex-col justify-center h-full pr-[4rem] pt-12'>
+    <div name='home' className='w-full h-screen bg-[#222831] flex overflow-x-hidden overflow-y-hidden'>
+      <div className='max-w-full mx-auto laptop:mx-auto flex flex-col items-center justify-center h-full pl-2 laptop:flex-row'>
+        <div className='flex flex-col justify-center h-full laptop:pr-[4rem] pt-12'>
           <Fade triggerOnce direction='down'>
             <h2 className='text-[#EEEEEE] font-bold text-4xl'>Hi, I&apos;m Diego Letelier</h2>
           </Fade>
@@ -32,7 +32,7 @@ const Home = () => {
           </div>
         </div>
         <Rotate direction='left' triggerOnce>
-          <div className=' bg-[rgb(137,44,220)] bg-gradient-to-r from-purple-700 via-purple-500 to-pink-300 transform rotate-[-45deg] w-[25rem] h-[25rem] rounded-full overflow-hidden '>
+          <div className=' bg-[rgb(137,44,220)] bg-gradient-to-r from-purple-700 via-purple-500 to-pink-300 transform rotate-[-45deg] w-[25rem] h-[25rem] rounded-full overflow-hidden'>
             <img src={Hero} alt="profile" className='relative scale-[0.90] top-6 right-4 transform rotate-45' />
           </div>
         </Rotate>

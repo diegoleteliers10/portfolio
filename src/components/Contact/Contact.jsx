@@ -27,7 +27,7 @@ const Contact = () => {
   }
 
   return (
-    <div id='contact' className='h-screen w-full bg-[#222831] flex flex-col items-center justify-center'>
+    <div id='contact' className='h-screen w-full bg-[#222831] flex flex-col items-center justify-center overflow-x-hidden overflow-y-hidden'>
      <div className='max-w-screen-lg mx-auto flex items-center'>
       <Slide triggerOnce delay={450} direction='left'>
         <div className='flex flex-col justify-center items-center bg-[#393E46] rounded-lg px-4 py-4 mt-12 ml-[3rem]'>
@@ -47,7 +47,7 @@ const Contact = () => {
               <Fade damping={400} cascade delay={700} triggerOnce>
                 <label className='text-[#D9ACF5] font-bold text-base'>Message</label>
               </Fade>
-              <textarea placeholder='Your message' name="message" className='w-full h-[200px] caret-[#892CDC] pl-2 py-1 rounded-md'/>
+              <textarea placeholder='Your message' name="message" className='w-full h-[200px] caret-[#892CDC] pl-2 py-1 rounded-md resize-none'/>
               <input onClick={notify} type="submit" value='Send' className='bg-[#892CDC] text-[#EEEEEE] font-bold rounded-md py-2 mt-2 cursor-pointer hover:scale-105 active:translate-y-[0.2rem] active:transition duration-150 '/>
             </div>
           </form>

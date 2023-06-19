@@ -9,7 +9,7 @@ import brain from '../assets/i7OD2wZIi5.json'
 
 const Experience = () => {
   return (
-    <div id='experience' className='h-screen w-full bg-[#222831] flex flex-col justify-center items-center'>
+    <div id='experience' className='h-screen w-full bg-[#222831] flex flex-col justify-center items-center overflow-x-hidden overflow-y-hidden'>
       <div className='flex flex-col justify-center items-center relative top-8'>
         <div className='text-center relative bottom-[2rem]'>
           <Slide delay={350} direction='right' triggerOnce>

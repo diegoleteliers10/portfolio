@@ -5,7 +5,7 @@ import { projects } from '../data/data'
 import {Slide} from 'react-awesome-reveal'
 const Projects = () => {
   return (
-    <div id='projects' className='h-screen w-full bg-[#222831] flex flex-col justify-center items-center pb-[6rem] gap-6'> 
+    <div id='projects' className='h-screen w-full bg-[#222831] flex flex-col justify-center items-center pb-[6rem] gap-6 overflow-x-hidden overflow-y-hidden'> 
     <Slide delay={400} triggerOnce direction='down'>
       <div className='text-center'>
         <h2 className='text-[#892CDC] text-3xl font-bold'>Projects</h2>
@@ -33,7 +33,6 @@ const Projects = () => {
                   ))
                 }
               </div>
-
             </div>
           </Tilt>
         ))}

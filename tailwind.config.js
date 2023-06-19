@@ -8,8 +8,17 @@ export default {
     fontFamily: {
       signature:["Over the rainbow"]
     },
-    dropShadow: {
-      'sp': '1px 9px 8px -8px rgba(252,249,252,0.91'
+    screens: {
+      'iphone': '400px',
+      // => @media (min-width: 640px) { ... }
+
+      'tablet': '640px',
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'mac': '1280px',
+      // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ import { Fade, Slide, Bounce } from 'react-awesome-reveal';
 
 const Skills = () => {
   return (
-    <div id='skills' className='h-screen w-full bg-[#222831]'>
+    <div id='skills' className='h-screen w-full bg-[#222831] overflow-x-hidden overflow-y-hidden'>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full pl-2'>
         <Fade direction='down' triggerOnce delay={350}>
           <div className='text-center'>

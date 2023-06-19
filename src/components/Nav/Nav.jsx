@@ -51,14 +51,14 @@ const Nav = () => {
     }
   ]
   return ( 
-    <div id='nav' className='flex justify-between items-center w-full h-20 pl-[5rem] pr-11 bg-[#222831] fixed z-[9999] sm:w-full sm:h-20 '>
+    <div id='nav' className='flex justify-between items-center px-6 w-full h-20 laptop:pl-[5rem] laptop:pr-11 bg-[#222831] fixed z-[9999] laptop:pt-0'>
       <Fade triggerOnce>
         <div>
-          <h1 className='text-3xl text-[#D9ACF5] font-signature sm:text-[xl]'>Diego.</h1>
+          <h1 className='text-[#D9ACF5] font-signature text-[2rem] laptop:text-3xl laptop:hover:scale-125 laptop:duration-200'>Diego.</h1>
         </div>
       </Fade>
 
-        <ul className='hidden z-10 md:flex'>
+        <ul className='hidden z-10 laptop:flex'>
           <Fade direction='down' triggerOnce>
             {listOfRefs.map((item)=>
             <li key={item.id} className='px-8 focus:scale-110 focus:text-[#892CDC] text-[#EEEEEE] cursor-pointer font-medium hover:scale-110 duration-200 hover:text-[#892CDC]'>
@@ -67,14 +67,14 @@ const Nav = () => {
           </Fade>
         </ul>
 
-        <div onClick={()=>setNav(!nav)}className='cursor-pointer pr-4 z-10 md:hidden'>
-          {nav?<FaTimes size={30} className='text-[#EEEEEE]'/>:<FaBars size={30} className='text-[#EEEEEE]'/>}
+        <div onClick={()=>setNav(!nav)}className='cursor-pointer pr-4 z-10 laptop:hidden'>
+          {nav?<FaTimes size={40} className='text-[#EEEEEE] overflow-hidden'/>:<FaBars size={40} className='text-[#EEEEEE]'/>}
         </div>
         {nav &&
-          <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[#222831]'>
+          <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-[120vh] bg-[#222831]'>
             {listOfRefs.map((item)=>
-            <li key={item.id} className='p-4 text-[#EEEEEE] cursor-pointer font-medium hover:scale-110 duration-200 hover:text-[#892CDC]'>
-              <Link spy={true} smooth={true} duration={70} to={item.ref}>{item.name}</Link>
+            <li key={item.id} className='p-5 text-[#D9ACF5] cursor-pointer font-medium text-[2rem]'>
+              <Link spy={true} smooth={true} duration={500} to={item.ref} onClick={()=> setTimeout(setNav(!nav),0)}>{item.name}</Link>
             </li>)}
           </ul>}
     </div>
