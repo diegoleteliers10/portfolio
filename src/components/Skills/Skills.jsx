@@ -1,7 +1,7 @@
 import { skills } from '../data/data'
 import skillsSvg from '../assets/AFjYjVMx5B.json'
 import { Player} from '@lottiefiles/react-lottie-player';
-import { Fade, Slide, Bounce } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 const Skills = () => {
   return (
@@ -23,8 +23,9 @@ const Skills = () => {
               style={{ height: '400px', width: '400px', position: 'relative', right: '2rem'}}
             ></Player>
           </Slide>
-          <Bounce triggerOnce delay={450}>
+          {/* <Fade triggerOnce delay={450} cascade damping={1e-1}> */}
           <div className='grid grid-cols-3 gap-y-2 mt-12 gap-x-[3rem]'> 
+            <Fade triggerOnce delay={650} cascade damping={1e-1}>
             {
               skills.map((skill) => {
                 return (
@@ -36,9 +37,9 @@ const Skills = () => {
                 )
               })
             }
-            
+            </Fade>
           </div>
-          </Bounce>
+          {/* </Fade> */}
           <p className='absolute font-signature text-[#D9ACF5] left-[15%] top-[calc(240%-2rem)] -rotate-45 text-xl'>&lt;Player&gt;</p>
           <p className='absolute font-signature text-[#D9ACF5] left-[38%] top-[calc(280%-2rem)] -rotate-45 text-xl'>&lt;/Player&gt;</p>
         </div>

@@ -37,7 +37,7 @@ const About = () => {
       <div className='flex justify-center items-center h-full pt-[4rem] px-4 gap-12'>
         <div className='flex flex-col justify-center items-center pb-2 pt-6'>
           <p className='text-[#D9ACF5] absolute bottom-[-7rem] left-[18%]  font-signature font-medium text-xl'>&lt;h2&gt;</p>
-          <p className='text-[#D9ACF5] absolute bottom-[-10rem] left-[36%] font-signature font-medium text-xl'>&lt;/h2&gt;</p>
+          <p className='text-[#D9ACF5] absolute bottom-[-9rem] left-[36%] font-signature font-medium text-xl'>&lt;/h2&gt;</p>
 
           <Fade delay={450} triggerOnce>
             <h2 className='text-[#892CDC] text-4xl font-bold relative right-[6rem]'>About Me</h2>
