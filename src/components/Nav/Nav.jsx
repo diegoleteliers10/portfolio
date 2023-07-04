@@ -51,7 +51,7 @@ const Nav = () => {
     }
   ]
   return ( 
-    <div id='nav' className='flex justify-between items-center px-6 w-full h-20 laptop:pl-[5rem] laptop:pr-11 bg-[#222831] fixed z-[9999] laptop:pt-0'>
+    <div id='nav' className='flex justify-between items-center px-6 w-full h-[3rem] laptop:pl-[5rem] laptop:pr-11 bg-[#222831] fixed z-[9999] laptop:pt-0'>
       <Fade triggerOnce>
         <div>
           <h1 className='text-[#D9ACF5] font-signature text-[2rem] laptop:text-3xl laptop:hover:scale-125 laptop:duration-200'>Diego.</h1>
