@@ -10,7 +10,7 @@ const study= [
     {
       id:1,
       name: "Industrial Engineering",
-      place: "University of Development, Chile",
+      place: "U. of Development, Chile",
       description: "With 2.25 years of experience in the civil engineering career, with 45% of the courses passed.",
       date: "March 2019 - today",
       icon: "UDD.png"
@@ -98,7 +98,7 @@ const projects=[
     url: "https://github.com/diegoleteliers10/PI_Dogs_Henry",
     deploy:"https://doggydeep.netlify.app/",
     image: doggy,
-    description: "Design and develop a dog App with search, filtering, creation and deletion of dogs, eye catching and intuitive design. I had to get dogs through api requests to be displayed on screen, plus validations. I had use the data through routes in the server. And I had to create a database that had new and existing dogs and temperaments",
+    description: "Design and develop a dog App with search, filtering, creation and deletion of dogs, eye catching and intuitive design. I had to get dogs through api requests to be displayed on screen, plus validations. I had use the data through routes in the server. And I had to create a database that had new and existing dogs and temperaments.",
     leng:[{name:"#React",col:"#14b8a6"},{name:"#Express",col:"#166534"},{name:"#PostgreSQL",col:"#336691"},{name:"#Html",col:"#b91c1c"},{name:"#Redux",col:"#6b21a8"}]
   },
   {
@@ -107,7 +107,7 @@ const projects=[
     url: "https://github.com/diegoleteliers10/Rick_y_Morty",
     deploy:"",
     image: rick,
-    description: "Design and develop a rick and morty App. Where you can search, filtering, creation and deleted chartacters. Also eye catching and intuitive. I had to get characters through api requests to be displayed on screen, plus validations. I had use the data through routes in the server. And I had to create a database that save new users and their favorites characters",
+    description: "Design and develop a rick and morty App. Where you can search, filtering, creation and deleted chartacters. Also eye catching and intuitive. I had to get characters through api requests to be displayed on screen, plus validations. I had use the data through routes in the server. And I had to create a database that save new users and their favorites characters.",
     leng:[{name:"#React",col:"#14b8a6"},{name:"#Express",col:"#166534"},{name:"#PostgreSQL",col:"#336691"},{name:"#Html",col:"#b91c1c"},{name:"#Redux",col:"#6b21a8"}]
   }
 ]

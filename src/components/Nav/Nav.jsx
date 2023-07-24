@@ -51,18 +51,18 @@ const Nav = () => {
     }
   ]
   return ( 
-    <div id='nav' className='flex justify-between items-center px-6 w-full h-[3rem] laptop:pl-[5rem] laptop:pr-11 bg-[#222831] fixed z-[9999] laptop:pt-0'>
+    <div id='nav' className='flex justify-between items-center px-6 w-full h-[4rem] laptop:pl-[5rem] laptop:pr-11 bg-[#222831] fixed z-[9999] laptop:pt-0'>
       <Fade triggerOnce>
         <div>
           <h1 className='text-[#D9ACF5] font-signature text-[2rem] laptop:text-3xl laptop:hover:scale-125 laptop:duration-200'>Diego.</h1>
         </div>
       </Fade>
 
-        <ul className='hidden z-10 laptop:flex'>
+        <ul className='hidden laptop:flex'>
           <Fade direction='down' triggerOnce>
             {listOfRefs.map((item)=>
-            <li key={item.id} className='px-8 focus:scale-110 focus:text-[#892CDC] text-[#EEEEEE] cursor-pointer font-medium hover:scale-110 duration-200 hover:text-[#892CDC]'>
-              <Link to={item.ref} smooth={true} duration={500} >{item.name}</Link>
+            <li key={item.id} className='px-6 text-[#EEEEEE] text-lg cursor-pointer font-semibold hover:text-[#892CDC] duration-300'>
+              <Link to={item.ref} smooth={true} duration={500}>{item.name}</Link>
             </li>)}
           </Fade>
         </ul>

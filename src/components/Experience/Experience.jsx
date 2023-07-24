@@ -25,7 +25,7 @@ const Experience = () => {
           <div className='flex flex-col justify-center items-center rounded-lg border-[2px] border-[#393E46] bg-[#393E46] hover:hover:scale-110 hover:border-[#892CDC] duration-200'>
 
             <Fade damping={400} delay={500} triggerOnce>
-              <div className='flex flex-col justify-center items-center pt-1'>
+              <div className='flex flex-col justify-center items-center pt-1 relative top-2'>
                 <FaUniversity size={30} className='text-[#D9ACF5]'/>
                 <h3 className='text-xl text-[#892CDC] font-bold'>Studies</h3>
               </div>
@@ -35,13 +35,13 @@ const Experience = () => {
               <div className='flex flex-col justify-around gap-2 p-4'>
                 {study.map((item) => (
                   
-                  <div key={item.id}className='border-none rounded-md bg-[#222831] px-3 py-3 relative w-[250px] h-[150px]'>
+                  <div key={item.id}className='rounded-md bg-[#222831] relative w-[250px] h-[150px] px-3 py-2'>
                     <h3 className='text-lg text-[#892CDC] font-bold'>{item.name}</h3>
-                    <h5 className='text-[14px] leading-6 text-[#D9ACF5]'>{item.place}</h5>
-                    <h5 className='text-[#D9ACF5] text-[10px] font-semibold mt-1 w-full h-full'>{item.description} </h5>
-                    <p className='text-[10px] text-[#D9ACF5] absolute bottom-[0.5rem] right-[1rem]'> <AiOutlineCalendar size={15} className='inline-block'/> {item.date}</p>
-                    <div className='rounded-full w-[25px] h-[25px] bg-white overflow-hidden absolute top-4 right-[1rem]'>
-                      <img src={item.icon} alt="icon" className='relative top-2 scale-[2.5]' />
+                    <h5 className='text-[#D9ACF5] font-light'>{item.place}</h5>
+                    <p className='text-[#D9ACF5] font-medium'>{item.description} </p>
+                    <p className='text-[#D9ACF5] font-extralight text-xs absolute right-[5px] bottom-[5px]'> <AiOutlineCalendar size={17} className='inline-block relative bottom-[2px]'/> {item.date}</p>
+                    <div className='absolute top-[10px] right-[10px] rounded-full bg-[#ffffff] w-[30px] h-[30px] flex justify-center items-center overflow-hidden'>
+                      <img src={item.icon} alt={item.name} className='scale-[2]'/>
                     </div>
                   </div>
                 
