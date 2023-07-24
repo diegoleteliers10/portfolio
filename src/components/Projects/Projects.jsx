@@ -7,7 +7,7 @@ import {Slide} from 'react-awesome-reveal'
 
 const Projects = () => {
   return (
-    <div id='projects' className='h-screen w-full bg-[#222831] flex flex-col justify-center items-center pb-[6rem] gap-6 overflow-x-hidden overflow-y-hidden'> 
+    <div id='projects' className='h-screen w-full bg-[#222831] flex flex-col justify-center items-center pb-[2rem] gap-6 overflow-x-hidden overflow-y-hidden'> 
     <Slide delay={400} triggerOnce direction='down'>
       <div className='text-center'>
         <h2 className='text-[#892CDC] text-3xl font-bold'>Projects</h2>
@@ -25,7 +25,7 @@ const Projects = () => {
               }
             </h3>
             <h6 className='text-[#222831] font-medium text-xs mt-1'>{project.description}</h6>
-            <div className='flex mt-1'>
+            <div className='flex mt-1 gap-2'>
               {project.leng.map((leng)=>(
                 <p key={leng.name} className='text-xs' style={{color:`${leng.col}`}}>
                   {leng.name}

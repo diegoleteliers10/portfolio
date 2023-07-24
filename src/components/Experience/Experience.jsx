@@ -37,8 +37,8 @@ const Experience = () => {
                   
                   <div key={item.id}className='rounded-md bg-[#222831] relative w-[250px] h-[150px] px-3 py-2'>
                     <h3 className='text-lg text-[#892CDC] font-bold'>{item.name}</h3>
-                    <h5 className='text-[#D9ACF5] font-light'>{item.place}</h5>
-                    <p className='text-[#D9ACF5] font-medium'>{item.description} </p>
+                    <h5 className='text-[#D9ACF5] font-semibold'>{item.place}</h5>
+                    <p className='text-[#ffffff] font-thin'>{item.description} </p>
                     <p className='text-[#D9ACF5] font-extralight text-xs absolute right-[5px] bottom-[5px]'> <AiOutlineCalendar size={17} className='inline-block relative bottom-[2px]'/> {item.date}</p>
                     <div className='absolute top-[10px] right-[10px] rounded-full bg-[#ffffff] w-[30px] h-[30px] flex justify-center items-center overflow-hidden'>
                       <img src={item.icon} alt={item.name} className='scale-[2]'/>
